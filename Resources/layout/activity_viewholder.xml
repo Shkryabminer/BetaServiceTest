@@ -1,0 +1,77 @@
+﻿ 
+    <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation = "horizontal"
+    android:layout_width="match_parent"
+    android:layout_height ="60dp">
+
+   <LinearLayout
+        android:orientation = "vertical"
+              android:layout_width="0dp"
+        android:layout_weight = "1"
+              android:layout_height="match_parent"
+        >
+<TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+            android:textAlignment = "center"
+            android:layout_marginTop = "5dp"
+    android:text="ID"       
+    android:textSize="20sp"
+   />
+        <TextView
+            android:id ="@+id/tv_id_signal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+            android:textAlignment = "center"
+            android:hint = "Number"              
+            android:textSize="20sp"
+             android:layout_marginBottom="5dp"
+            
+   />
+    </LinearLayout>
+<RelativeLayout
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+        android:layout_weight = "3"        
+    >
+    <TextView
+            android:id = "@+id/tv_pair"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop = "5dp"
+        android:text ="Pair:"
+        android:textSize = "18sp"
+        />
+    <TextView
+            android:id="@+id/tv_timeFrame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Timeframe:"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/tv_pair"     
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="EURUSD"
+        android:id="@+id/tv_pairValue"
+            android:layout_marginRight="20dp"
+            android:layout_alignBottom="@+id/tv_pair"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"            
+        />
+    <TextView
+            android:id="@+id/tv_timeFrame_Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="H1"
+        android:textSize ="18sp"
+        android:layout_alignBottom ="@+id/tv_timeFrame"
+            android:layout_alignLeft="@+id/tv_pairValue"
+        />
+</RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    
+    android:animateLayoutChanges="true"
+    android:orientation = "vertical">
+    <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+        android:layout_weight="1">
+    </RelativeLayout>
+     <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+        android:layout_weight="1">
+        <EditText
+            android:inputType="text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/ETlogin"
+            android:hint="Login"
+            android:textSize="20sp"
+            android:layout_marginLeft="150dp"        
+    />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id ="@+id/ETpassword"
+            android:hint="Password"
+            android:textSize="20sp"
+            android:layout_below="@+id/ETlogin"
+            android:layout_alignLeft="@+id/ETlogin"
+/>
+        <Button
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+        android:id ="@+id/btnlogin"
+            android:text = "Login"
+            android:textAllCaps="false"
+            android:layout_alignLeft="@+id/ETpassword"
+            android:layout_below="@+id/ETpassword"
+        />
+    </RelativeLayout> 
+        <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+        android:id = "@+id/textViewResponse"
+        />
+    </RelativeLayout>
+   
+
+</LinearLayout>
